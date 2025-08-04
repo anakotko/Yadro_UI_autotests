@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 import pages.*;
 
 @Epic("Главная страница")
+@DisplayName("Главная страница")
 public class MainPageTests extends TestBase {
 
     MainPage mainPage = new MainPage();

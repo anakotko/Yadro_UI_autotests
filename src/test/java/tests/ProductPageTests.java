@@ -8,6 +8,7 @@ import pages.MainPage;
 import pages.ProductPage;
 
 @Epic("Страница 'Продукт'")
+@DisplayName("Страница 'Продукт'")
 public class ProductPageTests extends TestBase {
     MainPage mainPage = new MainPage();
     ProductPage productPage = new ProductPage();

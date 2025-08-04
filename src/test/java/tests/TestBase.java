@@ -26,7 +26,6 @@ public class TestBase {
         String SELENOID_LOGIN = System.getProperty("selenoid.login");
         String SELENOID_PASSWORD = System.getProperty("selenoid.password");
         Configuration.remote = "https://" + SELENOID_LOGIN + ":" + SELENOID_PASSWORD + "@" + SELENOID_URL + "/wd/hub";
-//        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
@@ -43,7 +42,6 @@ public class TestBase {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
             mainPage.openPage();
     }
-
 
     @AfterEach
     void addAttachments() {

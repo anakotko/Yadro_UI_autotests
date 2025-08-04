@@ -8,6 +8,7 @@ import pages.MainPage;
 import pages.ServicePage;
 
 @Epic("Страница 'Сервис'")
+@DisplayName("Страница 'Сервис'")
 public class ServicePageTests extends TestBase{
 
     ServicePage servicePage = new ServicePage();

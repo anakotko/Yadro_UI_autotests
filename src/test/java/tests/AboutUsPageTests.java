@@ -8,6 +8,7 @@ import pages.AboutUsPage;
 import pages.MainPage;
 
 @Epic("Страница 'О нас'")
+@DisplayName("Страница 'О нас'")
 public class AboutUsPageTests extends TestBase{
 
     MainPage mainPage = new MainPage();

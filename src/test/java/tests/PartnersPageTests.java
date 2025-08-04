@@ -9,6 +9,7 @@ import pages.PartnersButtonPage;
 import pages.PartnersPage;
 
 @Epic("Страница 'Партнеры'")
+@DisplayName("Страница 'Партнеры'")
 public class PartnersPageTests extends TestBase{
 
     MainPage mainPage = new MainPage();
