@@ -18,8 +18,6 @@ public class MainPageTests extends TestBase {
         @Tag("yadro_test")
         @DisplayName("Проверка отображения логотипа компании")
         void logoShouldBeVisibleTest() {
-            mainPage
-//                    .openPage()
-                    .checkLogoIsVisible();
+            mainPage.checkLogoIsVisible();
         }
     }

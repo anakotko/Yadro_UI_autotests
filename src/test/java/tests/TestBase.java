@@ -40,7 +40,7 @@ public class TestBase {
             MainPage mainPage = new MainPage();
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-            mainPage.openPage();
+        mainPage.openPage();
     }
 
     @AfterEach

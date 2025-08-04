@@ -22,9 +22,7 @@ public class PartnersPageTests extends TestBase{
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Открываем страницу Партнеры и видим заголовок 'Партнерская экосистема'")
     void partnersPageTest() {
-        mainPage
-//                .openPage()
-                .clickPartnersPage();
+        mainPage.clickPartnersPage();
         partnersPage.partnersPageHeaderCheck("Партнерская экосистема");
     }
 
@@ -34,9 +32,7 @@ public class PartnersPageTests extends TestBase{
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Проверяем наличие кнопки 'Стать партнером'")
     void buttonShouldBeVisibleTest() {
-        mainPage
-//                .openPage()
-                .clickPartnersPage();
+        mainPage.clickPartnersPage();
         partnersButtonPage.buttonShouldBeVisible("Стать партнером");
     }
 }

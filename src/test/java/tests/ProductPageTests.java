@@ -19,9 +19,7 @@ public class ProductPageTests extends TestBase {
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Открываем страницу Продукты, отображается строчка 'Новый импульс для развития бизнеса'")
     void productPageTest() {
-        mainPage
-//                .openPage()
-                .clickProductPage();
+        mainPage.clickProductPage();
         productPage.productPageHeaderCheck("Новый импульс для развития бизнеса");
     }
 }

@@ -20,9 +20,7 @@ public class ServicePageTests extends TestBase{
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Открываем страницу Сервис и видим заголовок 'Программы поддержки'")
     void servicePageTest() {
-        mainPage
-//                .openPage()
-                .clickServicePage();
+        mainPage.clickServicePage();
         servicePage.servicePageHeaderCheck("Программы поддержки");
     }
 //    проверка видимости карты
@@ -32,9 +30,7 @@ public class ServicePageTests extends TestBase{
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Открываем страницу Сервис и проверяем видимости карты")
     void checkMapShouldBeVisibleTest() {
-        mainPage
-//                .openPage()
-                .clickServicePage();
+        mainPage.clickServicePage();
         servicePage.servicePageMapCheck();
 }
 }

@@ -20,9 +20,7 @@ public class AboutUsPageTests extends TestBase{
     @Tag("yadro_test")
     @DisplayName("Проверка отображения адреса на странице 'О нас' в разделе 'Как с нами связаться'")
     void logoShouldBeVisibleTest() {
-        mainPage
-//                .openPage()
-                .clickAboutUsPage();
+        mainPage.clickAboutUsPage();
         aboutUsPage.howToContactUsBtn()
                 .checkAddressOnPage();
     }
