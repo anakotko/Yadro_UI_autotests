@@ -7,7 +7,7 @@ import pages.MainPage;
 import pages.PartnersButtonPage;
 import pages.PartnersPage;
 
-public class PartnersPageTests {
+public class PartnersPageTests extends TestBase{
 
     MainPage mainPage = new MainPage();
     PartnersPage partnersPage = new PartnersPage();

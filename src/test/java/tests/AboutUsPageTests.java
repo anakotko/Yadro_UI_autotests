@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import pages.AboutUsPage;
 import pages.MainPage;
 
-public class AboutUsPageTests {
+public class AboutUsPageTests extends TestBase{
 
     MainPage mainPage = new MainPage();
     AboutUsPage aboutUsPage = new AboutUsPage();

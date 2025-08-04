@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import pages.MainPage;
 import pages.ProductPage;
 
-public class ProductPageTests {
+public class ProductPageTests extends TestBase {
     MainPage mainPage = new MainPage();
     ProductPage productPage = new ProductPage();
 
