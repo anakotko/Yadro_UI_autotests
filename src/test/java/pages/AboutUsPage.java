@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class AboutUsPage {
     private SelenideElement contactUsBtn = $(".tn-atom[href='/ru/contacts']"),
-            checkAddress = $("field=tn_text_1588843481511");
+            checkAddress = $("[field='tn_text_1588843481511']");
 
     @Step("Переходим в раздел 'Как с нами связаться'")
     public AboutUsPage howToContactUsBtn(){
