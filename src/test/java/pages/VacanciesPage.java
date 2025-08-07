@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.$;
 public class VacanciesPage {
 
     private SelenideElement searchInput=$(".first-screen__search"),
-    searchResults=$(".vac__main col-lg-8 order-lg-1");
+    searchResults=$(".vac__result-container");
 
     @Step("Проверка работы поиска на странице Вакансии")
     public VacanciesPage partnersPageSearch(String searchQuery){
