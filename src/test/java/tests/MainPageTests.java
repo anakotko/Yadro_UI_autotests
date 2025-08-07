@@ -7,15 +7,15 @@ import org.junit.jupiter.api.Test;
 import pages.*;
 
 @Epic("Главная страница")
+@Owner("anakotko")
+@Tag("yadro_test")
 @DisplayName("Главная страница")
 public class MainPageTests extends TestBase {
 
     MainPage mainPage = new MainPage();
 
         @Test
-        @Owner("anakotko")
         @Severity(SeverityLevel.CRITICAL)
-        @Tag("yadro_test")
         @DisplayName("Проверка отображения логотипа компании")
         void logoShouldBeVisibleTest() {
             mainPage.checkLogoIsVisible();

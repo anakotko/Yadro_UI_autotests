@@ -8,6 +8,8 @@ import pages.AboutUsPage;
 import pages.MainPage;
 
 @Epic("Страница 'О нас'")
+@Owner("anakotko")
+@Tag("yadro_test")
 @DisplayName("Страница 'О нас'")
 public class AboutUsPageTests extends TestBase{
 
@@ -15,9 +17,7 @@ public class AboutUsPageTests extends TestBase{
     AboutUsPage aboutUsPage = new AboutUsPage();
 
     @Test
-    @Owner("anakotko")
     @Severity(SeverityLevel.CRITICAL)
-    @Tag("yadro_test")
     @DisplayName("Проверка отображения адреса на странице 'О нас' в разделе 'Как с нами связаться'")
     void logoShouldBeVisibleTest() {
         mainPage.clickAboutUsPage();

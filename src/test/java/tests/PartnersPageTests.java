@@ -9,6 +9,8 @@ import pages.PartnersButtonPage;
 import pages.PartnersPage;
 
 @Epic("Страница 'Партнеры'")
+@Owner("anakotko")
+@Tag("yadro_test")
 @DisplayName("Страница 'Партнеры'")
 public class PartnersPageTests extends TestBase{
 
@@ -17,8 +19,6 @@ public class PartnersPageTests extends TestBase{
     PartnersButtonPage partnersButtonPage = new PartnersButtonPage();
 
     @Test
-    @Tag("yadro_test")
-    @Owner("anakotko")
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Открываем страницу Партнеры и видим заголовок 'Партнерская экосистема'")
     void partnersPageTest() {
@@ -27,8 +27,6 @@ public class PartnersPageTests extends TestBase{
     }
 
     @Test
-    @Tag("yadro_test")
-    @Owner("anakotko")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Проверяем наличие кнопки 'Стать партнером'")
     void buttonShouldBeVisibleTest() {

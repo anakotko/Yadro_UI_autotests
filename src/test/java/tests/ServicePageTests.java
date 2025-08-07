@@ -8,6 +8,8 @@ import pages.MainPage;
 import pages.ServicePage;
 
 @Epic("Страница 'Сервис'")
+@Tag("yadro_test")
+@Owner("anakotko")
 @DisplayName("Страница 'Сервис'")
 public class ServicePageTests extends TestBase{
 
@@ -15,18 +17,13 @@ public class ServicePageTests extends TestBase{
     MainPage mainPage = new MainPage();
 
     @Test
-    @Tag("yadro_test")
-    @Owner("anakotko")
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Открываем страницу Сервис и видим заголовок 'Программы поддержки'")
     void servicePageTest() {
         mainPage.clickServicePage();
         servicePage.servicePageHeaderCheck("Программы поддержки");
     }
-//    проверка видимости карты
     @Test
-    @Tag("yadro_test")
-    @Owner("anakotko")
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Открываем страницу Сервис и проверяем видимости карты")
     void checkMapShouldBeVisibleTest() {

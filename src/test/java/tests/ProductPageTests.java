@@ -8,14 +8,14 @@ import pages.MainPage;
 import pages.ProductPage;
 
 @Epic("Страница 'Продукт'")
+@Tag("yadro_test")
+@Owner("anakotko")
 @DisplayName("Страница 'Продукт'")
 public class ProductPageTests extends TestBase {
     MainPage mainPage = new MainPage();
     ProductPage productPage = new ProductPage();
 
     @Test
-    @Tag("yadro_test")
-    @Owner("anakotko")
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Открываем страницу Продукты, отображается строчка 'Новый импульс для развития бизнеса'")
     void productPageTest() {

@@ -14,14 +14,13 @@ public class MainPage {
             productPage = $(".yadro-tab1"),
             partnersPage = $(".yadro-tab3"),
             servicePage = $(".yadro-tab4"),
-            aboutUsPage = $(".yadro-tab5");
+            aboutUsPage = $(".yadro-tab5"),
+            vacanciesPage = $(".yadro-tab6");
 
 
     @Step("Открываем главную страницу")
     public MainPage openPage(){
         open(baseUrl);
-        executeJavaScript("$('#fixedban').remove()");
-        executeJavaScript("$('footer').remove()");
 
         return this;
     }
@@ -57,6 +56,13 @@ public class MainPage {
     @Step("Открываем страницу О нас")
     public MainPage clickAboutUsPage(){
         aboutUsPage.click();
+
+        return this;
+    }
+
+    @Step("Открываем страницу Вакансии")
+    public MainPage clickVacanciesPage(){
+        vacanciesPage.click();
 
         return this;
     }
